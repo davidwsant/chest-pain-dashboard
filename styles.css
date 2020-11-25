@@ -1,0 +1,188 @@
+h1 {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:12px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+* {
+    font-family: "Work Sans"
+}
+
+.header-font {
+    font-size: 14px;
+    color:white;
+}
+
+.button-font {
+    font-size: 14px;
+    color:black;
+}
+
+.button-custom {
+    padding: 1000px 1000px;
+    border-radius:10px;
+}
+
+.shift-1 {
+    position:absolute; 
+    left:10px; 
+    white-space: nowrap;
+    /*top:10px;*/
+}
+
+.shift-2 {
+    position:absolute; 
+    left:250px; 
+    white-space: nowrap;
+    /*top:10px;*/
+}
+
+.shift-3 {
+    position:absolute; 
+    left:450px; 
+    white-space: nowrap;
+    /*top:10px;*/
+}
+
+.shift-4 {
+    position:absolute; 
+    left:650px; 
+    white-space: nowrap;
+    /*top:10px;*/
+}
+
+.shift-5 {
+    position:absolute; 
+    left:900px; 
+    white-space: nowrap;
+    /*top:10px;*/
+}
+
+.shift-name {
+    position:absolute; 
+    left:110px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-age {
+    position:absolute; 
+    left:280px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-wt {
+    position:absolute; 
+    left:475px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-location {
+    position:absolute; 
+    left:715px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-mrn {
+    position:absolute; 
+    left:937px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-dob {
+    position:absolute; 
+    left:285px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-code {
+    position:absolute; 
+    left:540px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-attending {
+    position:absolute; 
+    left:720px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-allergies {
+    position:absolute; 
+    left:74px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-sex {
+    position:absolute; 
+    left:281px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-isolation {
+    position:absolute; 
+    left:513px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-contact {
+    position:absolute; 
+    left:710px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-emergency {
+    position:absolute; 
+    left:1042px; 
+    /*top:10px;*/
+    white-space: nowrap;
+}
+
+.shift-height {
+    position:absolute; 
+    left:1009px; 
+    white-space: nowrap;
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+.toggle.ios .toggle-handle { border-radius: 20rem; }
+
+.wrapper {
+    width: 1400px; 
+    height: 1000px;
+    margin: auto;
+}
+
+.primaryLabel {
+    font-weight: bold; 
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.testing {
+    color: black;
+    fill: black;
+}
+
+.button-clicked circle,  
+.button-clicked path, 
+.button-clicked text, 
+.button-clicked td, 
+.button-clicked th,
+.button-clicked line,
+.button-clicked-misc {
+    opacity: 0.25
+}
