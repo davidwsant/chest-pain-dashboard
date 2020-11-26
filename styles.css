@@ -177,6 +177,10 @@ h1 {
     fill: black;
 }
 
+.link {
+    fill: blue;
+}
+
 .button-clicked circle,  
 .button-clicked path, 
 .button-clicked text, 
