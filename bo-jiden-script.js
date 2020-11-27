@@ -177,6 +177,10 @@ d3.select(window).on('load', () => {
         .attr('transform', 'translate ('+dgShiftX3+', 0)')
         .text('University of Utah Hospital')
 
+    dgCardioNote.on('click', () => {
+        cardioColumn2()
+    })
+
     let dgDischarge = dataGroup.append('g')
         .attr('transform', 'translate (0, '+dgShiftY6+')')
 
@@ -477,10 +481,10 @@ function ecgColumn2 () {
 function cathColumn2 () {
     d3.select('#column2Rect').attr('height', '725')
     d3.select('#column2SVG').attr('height', '725')
-    d3.select('#colum2Line1').text('Last Cath Prodecure 09/18/2020')
+    d3.select('#colum2Line1').text('Last Cath Prodecure 04/04/2001')
     d3.select('#colum2Line2').text('Internal Jugular Central Line Procedure Notes')
     d3.select('#colum2Line3').text("St. Mark's Hospital")
-    d3.select('#colum2Line4').text("INDICATION: _")
+    d3.select('#colum2Line4').text("INDICATION: ***")
     d3.select('#colum2Line5').text("PROCEDURE OPERATOR: Killary Hinton")
     d3.select('#colum2Line6').text("ATTENDING PHYSICIAN: In Attendance (Y)")
     d3.select('#colum2Line8').text("CONSENT:")
@@ -513,6 +517,44 @@ function cathColumn2 () {
 
 }
 
+function cardioColumn2 () {
+    d3.select('#column2Rect').attr('height', '725')
+    d3.select('#column2SVG').attr('height', '725')
+    d3.select('#colum2Line1').text('Last Cardiology Note 09/19/2020')
+    d3.select('#colum2Line2').text('Cardiology Discharge Summary')
+    d3.select('#colum2Line3').text("University of Utah Hospital")
+    d3.select('#colum2Line5').text("DISCHARGE DIAGNOSIS: Non-ST elevation myocardial infarction")
+    d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: Daniel Stormys")
+    d3.select('#colum2Line8').text("DISCHARGE MEDICATIONS")
+    //d3.select('#colum2Line8').text("CONSENT:")
+    d3.select('#colum2Line10').attr('fill', 'black').on('click', ()=> {}).text("1. Aspirin 325 mg daily.")
+    d3.select('#colum2Line11').text("2. Plavix 75 mg daily.")
+    d3.select('#colum2Line12').text("3. Lopressor 50 mg twice daily.")
+    d3.select('#colum2Line13').text("4. Lipitor 80 mg daily.")
+    d3.select('#colum2Line14').text("5. Wellbutrin SR 150 mg as previously directed.")
+    d3.select('#colum2Line16').text("Shane, can you write a discharge note for this?")
+    // d3.select('#colum2Line17').text("technique. A time out was performed. My hands were washed immediately prior to the ")
+    // d3.select('#colum2Line18').text("procedure. I wore a surgical cap, mask with protective eyewear, full gown and sterile ")
+    // d3.select('#colum2Line19').text("gloves throughout the procedure. The patient was placed in Trendelenburg position. ")
+    // d3.select('#colum2Line19').text("RIGHT chest region was prepped using chlorhexidine scrub and draped in sterile")
+    // d3.select('#colum2Line20').text("fashion using a full drape and sterile probe cover employed. The medial and lateral")
+    // d3.select('#colum2Line21').text("heads of the sternocleidomastoid muscle were identified as was the carotid pulse.")
+    // d3.select('#colum2Line22').text("The Internal Jugular vein was identified using the ultrasound. Anesthesia was")
+    // d3.select('#colum2Line23').text("achieved over the vein using 1% lidocaine. Using real-time out of plane guidance,")
+    // d3.select('#colum2Line24').text("the introducer needle was inserted into the Internal Jugular vein under direct ")
+    // d3.select('#colum2Line25').text("ultrasound visualization. Venous blood was withdrawn. The syringe was removed and a ")
+    // d3.select('#colum2Line26').text("guidewire was advanced into the introducer needle. The guidewire was visualized in")
+    // d3.select('#colum2Line27').text("the Internal Jugular Vein by ultrasound. A small incision was made at the skin")
+    // d3.select('#colum2Line28').text("surface with a scalpel and the introducer needle was exchanged for a dilator over ")
+    // d3.select('#colum2Line29').text("the guidewire. After appropriate dilation was obtained, the dilator was exchanged ")
+    // d3.select('#colum2Line30').text("over the wire for a *** central venous catheter. The wire was removed and the catheter ")
+    // d3.select('#colum2Line31').text("was sutured in place at 2 cm. A sterile sorbaview shield was placed over the")
+    // d3.select('#colum2Line32').text("catheter at the insertion site. The patient tolerated the procedure without any")
+    // d3.select('#colum2Line33').text("hemodynamic compromise. At time of procedure completion, all ports aspirated and")
+    // d3.select('#colum2Line34').text("flushed properly. Post-procedure chest x-ray is pending at this time. Estimated")
+    // d3.select('#colum2Line35').text("blood loss is 500 mL.")
+
+}
 
 function resetStoryBoard () {
     d3.select('#colum2Line4').text('').attr('fill', 'black').on('click', () => {})
