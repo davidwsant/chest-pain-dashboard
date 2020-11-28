@@ -38,11 +38,11 @@ d3.select(window).on('load', () => {
 
     heartScoreGroup.append('text')
         .attr('transform', 'translate (10, 20)')
-        .text('HEART Score: 6')
+        .text('HEART Score: 3')
         .style('font-size', '20px')
     heartScoreGroup.append('text')
         .attr('transform', 'translate (10, 40)')
-        .text('Moderate risk of Major Adverse Cardiac Event')
+        .text('Low risk of Major Adverse Cardiac Event')
         .style('font-size', '20px')
 
     heartScoreGroup.on('click', () => {
@@ -69,7 +69,7 @@ d3.select(window).on('load', () => {
 
     heartPathwayGroup.append('text')
         .attr('transform', 'translate (10, 40)')
-        .text('Moderate Risk, Treat as High Risk')
+        .text('Low Risk')
         .style('font-size', '20px')
 
     heartPathwayGroup.on('click', () => {
@@ -459,15 +459,15 @@ d3.select(window).on('load', () => {
         .attr('id', 'pathwayHighPic')
         .style('padding-left', '150px')
         .attr('alt', 'Heart-Pathway-High')
-        .attr('src', 'Images/heart_pathway_high.jpg')
+        .attr('src', 'Images/heart_pathway_low.jpg')
         .attr('height', '0px')
         .attr('width', '0px')
         .style('margin-left', '10px')
 
     column2.append('img')
         .attr('id', 'ECGPic')
-        .attr('alt', 'bo-jiden-ECG')
-        .attr('src', 'Images/bo-jiden-ecg.jpg')
+        .attr('alt', 'brock-labomba-ECG')
+        .attr('src', 'Images/brock-labomba-ecg.jpg')
         .attr('height', '0px')
         .attr('width', '0px')
         .style('padding-left', '15px')
@@ -501,14 +501,14 @@ d3.select(window).on('load', () => {
 
 function scoreColumn2 () {
     d3.select('#column2SVG').selectAll('text').text('')
-    d3.select('#colum2Line1').text('HEART Score: 6')
-    d3.select('#colum2Line2').text('Moderate risk of Major Adverse Cardiac Event')
-    d3.select('#colum2Line3').text('12-16.6% of Adverse Cardiac Event')
+    d3.select('#colum2Line1').text('HEART Score: 3')
+    d3.select('#colum2Line2').text('Low risk of Major Adverse Cardiac Event')
+    d3.select('#colum2Line3').text('0.9-1.7% of Adverse Cardiac Event')
     d3.select('#colum2Line4').text('History: Moderately Suspicious (+1)').attr('fill', 'black').on('click', () => {})
-    d3.select('#colum2Line5').text('EKG: Non-specific repolarization disturbance (+1)')
-    d3.select('#colum2Line6').text('Age: > 65 (+2)')
+    d3.select('#colum2Line5').text('EKG: Normal (+0)')
+    d3.select('#colum2Line6').text('Age: 45-64 (+1)')
     d3.select('#colum2Line7').text('Risk Factors: Hypertension and Family History of CVD (+1)')
-    d3.select('#colum2Line8').text('Initial Troponin: 2X normal limit (+1)')
+    d3.select('#colum2Line8').text('Initial Troponin: Less than normal limit (+0)')
     d3.select('#colum2Line9').text('Visit MDCalc Website').attr('fill', 'blue').on('click', ()=> {
         window.open('https://www.mdcalc.com/heart-score-major-cardiac-events')
     })
@@ -521,7 +521,7 @@ function scoreColumn2 () {
 function pathwayColumn2 () {
     d3.select('#column2SVG').selectAll('text').text('')
     d3.select('#colum2Line1').text('HEART Pathway')
-    d3.select('#colum2Line2').text('Moderate Risk, Treat as High Risk')
+    d3.select('#colum2Line2').text('Low Risk')
     d3.select('#colum2Line3').text('Order Serial Troponins')
     d3.select('#colum2Line4').text('See HEART Pathway Publication').attr('fill', 'blue').on('click', ()=> {
         window.open('https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.114.001384')
@@ -552,12 +552,12 @@ function cathColumn2 () {
     d3.select('#colum2Line5').text("PROCEDURE OPERATOR: Killary Hinton")
     d3.select('#colum2Line6').text("ATTENDING PHYSICIAN: In Attendance (Y)")
     d3.select('#colum2Line8').text("CONSENT:")
-    d3.select('#colum2Line9').attr('fill', 'black').on('click', ()=> {}).text("Consent was obtained from Bo Jiden prior to the procedure. Indications, risks, and ")
-    d3.select('#colum2Line10').text("benefits were explained at length. The procedure was performed emergently and the ")
-    d3.select('#colum2Line11').text("permission was implied because of the emergent nature.")
+    d3.select('#colum2Line9').attr('fill', 'black').on('click', ()=> {}).text("Consent was obtained from Brock LaBomba prior to the procedure. Indications, risks,  ")
+    d3.select('#colum2Line10').text("and benefits were explained at length. The procedure was performed emergently and  ")
+    d3.select('#colum2Line11').text("the permission was implied because of the emergent nature.")
     d3.select('#colum2Line13').text("PROCEDURE SUMMARY:")
     d3.select('#colum2Line14').text("The CDC Central Line Insertion Practices form was completed by an independent")
-    d3.select('#colum2Line15').text("observer (Lonika Melinsky) starting with the first handwash prior to starting sterile")
+    d3.select('#colum2Line15').text("observer (Bert and Ernie) starting with the first handwash prior to starting sterile")
     d3.select('#colum2Line16').text("technique. A time out was performed. My hands were washed immediately prior to the ")
     d3.select('#colum2Line17').text("procedure. I wore a surgical cap, mask with protective eyewear, full gown and sterile ")
     d3.select('#colum2Line18').text("gloves throughout the procedure. The patient was placed in Trendelenburg position. ")
@@ -577,7 +577,7 @@ function cathColumn2 () {
     d3.select('#colum2Line32').text("catheter at the insertion site. The patient tolerated the procedure without any")
     d3.select('#colum2Line33').text("hemodynamic compromise. At time of procedure completion, all ports aspirated and")
     d3.select('#colum2Line34').text("flushed properly. Post-procedure chest x-ray is pending at this time. Estimated")
-    d3.select('#colum2Line35').text("blood loss is 500 mL.")
+    d3.select('#colum2Line35').text("blood loss is 750 mL.")
 
 }
 
@@ -593,14 +593,14 @@ function echoColumn2() {
     d3.select('#colum2Line8').text("LVEF Location: IMC")
     d3.select('#colum2Line9').text("Ejection Fraction: 40%")
     d3.select('#colum2Line10').attr('fill', 'black').on('click', ()=> {}).text("LVEF scanned into iCentra: Yes ")
-    d3.select('#colum2Line11').text("RARA TEADE, RN - 06/23/2018 10:29 MDT")
+    d3.select('#colum2Line11').text("OSAMA BinSLEEPIN, RN - 06/23/2018 10:29 MDT")
     d3.select('#colum2Line12').text("")
     d3.select('#colum2Line13').text("Result type:       LVEF Transcribed Results - Text")
     d3.select('#colum2Line14').text("Result date:	    October 23, 2018 12:20 MDT")
     d3.select('#colum2Line15').text("Result status:	    Auth (Verified)")
     d3.select('#colum2Line16').text("Result title:	    Ejection Fraction")
-    d3.select('#colum2Line17').text("Performed by:	    RARA TEADE, RN on June 3, 2018 10:29 MDT")
-    d3.select('#colum2Line18').text("Verified by:	    RARA TEADE, RN on June 3, 2018 10:29 MDT")
+    d3.select('#colum2Line17').text("Performed by:	    OSAMA BinSLEEPIN, RN on June 3, 2018 10:29 MDT")
+    d3.select('#colum2Line18').text("Verified by:	    OSAMA BinSLEEPIN, RN on June 3, 2018 10:29 MDT")
     d3.select('#colum2Line19').text("Encounter info:	RRT000040952, YYT Hospital, Prereg")
     
 }
@@ -612,7 +612,7 @@ function cardioColumn2 () {
     d3.select('#colum2Line2').text('Cardiology Note')
     d3.select('#colum2Line3').text("University of Utah Hospital")
     d3.select('#colum2Line5').text("DISCHARGE DIAGNOSIS: Non-ST elevation myocardial infarction")
-    d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: Bunter Hiden")
+    d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: SoDom Insane")
     d3.select('#colum2Line9').text("DISCHARGE MEDICATIONS")
 
     d3.select('#colum2Line10').attr('fill', 'black').on('click', ()=> {}).text("1. Aspirin 325 mg daily.")
@@ -678,7 +678,7 @@ function dischargeColumn2 () {
     d3.select('#colum2Line35').text("14.2, hematocrit 41.8, platelet count 280,000. Sodium 141, potassium 3.9, chloride 107,")
     d3.select('#colum2Line36').text(" CO2 of 26, BUN 10, creatinine 1.1, glucose 90. CPK 165, MB 4.2 and troponin 1.66.")
     d3.select('#colum2Line38').text("DISCHARGE STATUS:  The patient is discharged home for outpatient followup with Dr. ")
-    d3.select('#colum2Line39').text("Mao Zedong in 1 to 2 weeks. He will also follow up with his primary care physician, ")
+    d3.select('#colum2Line39').text("Padamir Vutin in 1 to 2 weeks. He will also follow up with his primary care physician, ")
     d3.select('#colum2Line40').text("Dr. Araña Grande, within 4 to 6 weeks. The patient has been advised the importance ")
     d3.select('#colum2Line41').text("of smoking cessation. He does plan to quit. He has been given a copy of the ")
     d3.select('#colum2Line42').text("discharge plan with instructions, medications and prescriptions and will talk to Dr. ")
