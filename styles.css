@@ -196,6 +196,7 @@ h1 {
 .button-clicked td, 
 .button-clicked th,
 .button-clicked line,
+.button-clicked svg,
 .button-clicked-misc {
     opacity: 0.25
 }

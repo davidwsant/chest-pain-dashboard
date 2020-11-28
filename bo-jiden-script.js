@@ -1,10 +1,10 @@
-console.log('Script read in')
+
 d3.select(window).on('load', () => {
-    //console.log('Page was read in')
-    //d3.select('body').on('click', resetStoryBoard, true)
+
     let column1 = d3.select('#column-1')
     let column2 = d3.select('#column-2')
     let column1SVG = column1.append('svg')
+        .attr('id', 'column1SVG')
         .attr('width', '500')
         .attr('height', '500')
 
@@ -166,7 +166,7 @@ d3.select(window).on('load', () => {
         echoColumn2()
     })
     
-        let dgCardioNote = dataGroup.append('g')
+    let dgCardioNote = dataGroup.append('g')
         .attr('transform', 'translate (0, '+dgShiftY5+')')
 
     dgCardioNote.append('text')
@@ -204,7 +204,6 @@ d3.select(window).on('load', () => {
         dischargeColumn2()
     })
 
-    //column2.append('svg')
     let column2SVG = column2.append('svg')
         .attr('id', 'column2SVG')
         .attr('width', '750')
@@ -229,45 +228,38 @@ d3.select(window).on('load', () => {
     column2SVG.append('text')
         .attr('id', 'colum2Line2')
         .attr('transform', 'translate (355, 50)')
-        //.text('Select a tab on the left to see relevant files or information')
         .style('font-size', '20px')
         .style('text-anchor', 'middle')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line3')
         .attr('transform', 'translate (355, 75)')
-        //.text('Select a tab on the left to see relevant files or information')
         .style('font-size', '20px')
         .style('text-anchor', 'middle')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line4')
         .attr('transform', 'translate (20, 95)')
-        //.text('Column 2 Line 3')
         .style('font-size', '16px')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line5')
         .attr('transform', 'translate (20, 115)')
-        //.text('Column 2 Line 3')
         .style('font-size', '16px')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line6')
         .attr('transform', 'translate (20, 135)')
-        //.text('Column 2 Line 3')
         .style('font-size', '16px')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line7')
         .attr('transform', 'translate (20, 155)')
-        //.text('Column 2 Line 3')
         .style('font-size', '16px')
 
     column2SVG.append('text')
         .attr('id', 'colum2Line8')
         .attr('transform', 'translate (20, 175)')
-        //.text('Column 2 Line 3')
         .style('font-size', '16px')
 
     column2SVG.append('text')
@@ -480,8 +472,31 @@ d3.select(window).on('load', () => {
         .attr('width', '0px')
         .style('padding-left', '15px')
         .style('margin-top', '-15px')
+        
+        
+    let storySVG = d3.select('#header-info').append('svg')
+        .attr('id', 'storySVG')
+        .attr('transform', 'translate (600, 150)')
+
+    storySVG.append('rect')
+        .attr('id', 'storyRect')
+        .attr('rx', '25')
+
+    storySVG.append('text')
+        .attr('id', 'storyText')
+        .attr('transform', 'translate (250, 115)')
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '18px')
+
+    storySVG.append('text')
+        .attr('id', 'storyText2')
+        .attr('transform', 'translate (250, 135)')
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '18px')
+
 
     d3.select('#column-1').on('click', resetStoryBoard, true)
+    d3.select('body').on('click', notStoryTelling, true)
 })
 
 function scoreColumn2 () {
@@ -511,8 +526,6 @@ function pathwayColumn2 () {
     d3.select('#colum2Line4').text('See HEART Pathway Publication').attr('fill', 'blue').on('click', ()=> {
         window.open('https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.114.001384')
     })
-    //d3.select('#c2L8Anchor').attr('href', 'https://www.mdcalc.com/heart-score-major-cardiac-events')
-    //d3.select('#MDCalcPpic').attr('height', '350px').attr('width', '710px')
     d3.select('#column2Rect').attr('height', '105')
     d3.select('#column2SVG').attr('height', '110')
     d3.select('#pathwayHighPic').attr('height', '500px').attr('width', '550px')
@@ -601,7 +614,7 @@ function cardioColumn2 () {
     d3.select('#colum2Line5').text("DISCHARGE DIAGNOSIS: Non-ST elevation myocardial infarction")
     d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: Bunter Hiden")
     d3.select('#colum2Line9').text("DISCHARGE MEDICATIONS")
-    //d3.select('#colum2Line8').text("CONSENT:")
+
     d3.select('#colum2Line10').attr('fill', 'black').on('click', ()=> {}).text("1. Aspirin 325 mg daily.")
     d3.select('#colum2Line11').text("2. Plavix 75 mg daily.")
     d3.select('#colum2Line12').text("3. Lopressor 50 mg twice daily.")
@@ -610,8 +623,8 @@ function cardioColumn2 () {
     d3.select('#colum2Line16').text("HPI: Patient reports no orthopnea, chest pain, PND, TIA symptoms, or syncope.")
     d3.select('#colum2Line18').text("ROS: Pertinent positives as above, all others are negative per 10 system review.")
     d3.select('#colum2Line20').text("LABORATORY DATA/DIAGNOSTIC STUDIES:")
-    d3.select('#colum2Line21').text("The patient had an EKG done today which was reviewed today by me. The EKG showed")
-    d3.select('#colum2Line22').text("sinus rhythm with a QT interval of 420 ms and a QRS of 100 ms. ")
+    d3.select('#colum2Line21').text("The patient had an EKG done today which was reviewed today by me. The EKG ")
+    d3.select('#colum2Line22').text("showed sinus rhythm with a QT interval of 420 ms and a QRS of 100 ms. ")
     d3.select('#colum2Line23').text("Patient has a CHADS-VAS score of 2. Discussed anti-coagulation with patient. ")
     d3.select('#colum2Line24').text("Patient will remain on Plavix, Lopressor and Lipitor. Patient will follow up with ")
     d3.select('#colum2Line25').text("their PCP for routine blood draws and dosing adjustments. Patient’s decision ")
