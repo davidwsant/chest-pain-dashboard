@@ -60,27 +60,37 @@
     </div>
     <br/>
     <br/>
-    <div id="buttons" style="flex-grow: 2; flex-basis: 0">
-        <h4 style="padding-left:10px;" >Select a Fictitous Patient:</h4>
-        <button onclick="location.href='bo-jiden-index.html'" type="button" 
-        class="btn btn-light btn-outline-secondary btn-sm" style="margin-left:10px; margin-bottom:0px; margin-top:0px">
-        <span style="font-size:18px; color:black">Bo Jiden</span>
-        </button>
-        <br/>
-        <button onclick="storyTelling()" type="button" 
-        class="btn btn-dark btn-outline-secondary btn-sm" style="margin-left:10px; margin-top:0px; margin-bottom:0px">
-        <span style="font-size:18px; color:black">Ronald Dump</span>
-        </button>
-        <br/>
-        <button onclick="storyTelling()" type="button" 
-        class="btn btn-light btn-outline-secondary btn-sm" style="margin-left:10px; margin-bottom:0px; margin-top:0px">
-        <span style="font-size:18px; color:black">Brock LaBomba</span>
-        </button>
-        <br/>
-        <button onclick="storyTelling()" type="button" 
-        class="btn btn-light btn-outline-secondary btn-sm" style="margin-left:10px; margin-bottom:0px; margin-top:0px">
-        <span style="font-size:18px; color:black">George Dubbayuh</span>
-        </button>
+    <div id="buttons">
+        <h4 style="padding-left:10px; " >Select a Fictitous Patient:</h4> <!-- style="flex-grow: 2; flex-basis: 0"-->
+        <div style="display:flex">
+            <button onclick="location.href='bo-jiden-index.html'" type="button" 
+            class="btn btn-light btn-outline-secondary btn-sm buttons" >
+            <span style="font-size:18px; color:black">Bo Jiden</span>
+            </button>
+            <br/>
+            <button onclick="storyTelling()" type="button" 
+            class="btn btn-dark btn-outline-secondary btn-sm buttons" >
+            <span style="font-size:18px; color:black">Ronald Dump</span>
+            </button>
+            <br/>
+            <button onclick="storyTelling()" type="button" 
+            class="btn btn-light btn-outline-secondary btn-sm buttons" >
+            <span style="font-size:18px; color:black">Brock LaBomba</span>
+            </button>
+            <br/>
+            <button onclick="storyTelling()" type="button" 
+            class="btn btn-light btn-outline-secondary btn-sm buttons" >
+            <span style="font-size:18px; color:black">George Dubbayuh</span>
+            </button>  <!-- style="margin-left:10px; margin-bottom:0px; margin-top:0px; flex-grow: 2; flex-basis: 0" -->
+        </div>
+        <div style="display:flex; ">
+            <!-- Put all of the pictures here -->
+            <img src="Images/bo-jiden.jpeg" style="float:center; margin-left: 10px; margin-right: 10px; flex-grow:1; flex-basis: 0" alt="DBMI Logo" height="5%" width="5%"></img>
+            <img src="Images/ronald-dump-picture.jpeg" style="float:center; margin-left: 10px; margin-right: 10px; flex-grow:1; flex-basis: 0" alt="DBMI Logo" height="5%" width="5%"></img>
+            <img src="Images/brock-labomba-picture.jpg" style="float:center; margin-left: 10px; margin-right: 10px; flex-grow:1; flex-basis: 0" alt="DBMI Logo" height="5%" width="5%"></img>
+            <img src="Images/george-dubbayuh-picture.jpeg" style="float:center; margin-left: 10px; margin-right: 10px; flex-grow:1; flex-basis: 0" alt="DBMI Logo" height="5%" width="5%"></img>
+            
+        </div>
     </div>
     <br/>
     <br/>
