@@ -200,7 +200,9 @@ d3.select(window).on('load', () => {
         .attr('transform', 'translate ('+dgShiftX3+', 0)')
         .text('University of Utah Hospital')
 
-    
+    dgDischarge.on('click', () => {
+        dischargeColumn2()
+    })
 
     //column2.append('svg')
     let column2SVG = column2.append('svg')
@@ -403,29 +405,49 @@ d3.select(window).on('load', () => {
         .attr('transform', 'translate (20, 715)')
         .style('font-size', '16px')
 
-        column2SVG.append('text')
+    column2SVG.append('text')
         .attr('id', 'colum2Line36')
         .attr('transform', 'translate (20, 735)')
         .style('font-size', '16px')
 
-        column2SVG.append('text')
+    column2SVG.append('text')
         .attr('id', 'colum2Line37')
         .attr('transform', 'translate (20, 755)')
         .style('font-size', '16px')
 
-        column2SVG.append('text')
+    column2SVG.append('text')
         .attr('id', 'colum2Line38')
         .attr('transform', 'translate (20, 775)')
         .style('font-size', '16px')
 
-        column2SVG.append('text')
+    column2SVG.append('text')
         .attr('id', 'colum2Line39')
         .attr('transform', 'translate (20, 795)')
         .style('font-size', '16px')
 
-        column2SVG.append('text')
+    column2SVG.append('text')
         .attr('id', 'colum2Line40')
         .attr('transform', 'translate (20, 815)')
+        .style('font-size', '16px')
+
+    column2SVG.append('text')
+        .attr('id', 'colum2Line41')
+        .attr('transform', 'translate (20, 835)')
+        .style('font-size', '16px')
+
+    column2SVG.append('text')
+        .attr('id', 'colum2Line42')
+        .attr('transform', 'translate (20, 855)')
+        .style('font-size', '16px')
+
+    column2SVG.append('text')
+        .attr('id', 'colum2Line43')
+        .attr('transform', 'translate (20, 875)')
+        .style('font-size', '16px')
+
+    column2SVG.append('text')
+        .attr('id', 'colum2Line44')
+        .attr('transform', 'translate (20, 895)')
         .style('font-size', '16px')
 
 
@@ -574,7 +596,7 @@ function cardioColumn2 () {
     d3.select('#column2Rect').attr('height', '815')
     d3.select('#column2SVG').attr('height', '815')
     d3.select('#colum2Line1').text('Last Cardiology Note 09/19/2020')
-    d3.select('#colum2Line2').text('Cardiology Discharge Summary')
+    d3.select('#colum2Line2').text('Cardiology Note')
     d3.select('#colum2Line3').text("University of Utah Hospital")
     d3.select('#colum2Line5').text("DISCHARGE DIAGNOSIS: Non-ST elevation myocardial infarction")
     d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: Bunter Hiden")
@@ -607,6 +629,48 @@ function cardioColumn2 () {
     d3.select('#colum2Line37').text("deep vein thrombosis, nerve injury, possible medical device malfunction, cancer ")
     d3.select('#colum2Line38').text("from radiation exposure, vascular avulsion, heart valve disruption, heart inversion")
     d3.select('#colum2Line39').text("or perforation, lead fragment embolization or orphaning, or pulmonary embolus.")
+
+}
+
+function dischargeColumn2 () {
+    d3.select('#column2Rect').attr('height', '905')
+    d3.select('#column2SVG').attr('height', '905')
+    d3.select('#colum2Line1').text('Last Discharge Summary 09/19/2020')
+    d3.select('#colum2Line2').text('Cardiac Discharge Summary')
+    d3.select('#colum2Line3').text("University of Utah Hospital")
+    d3.select('#colum2Line5').text("DATE OF ADMISSION: 09/18/2020")
+    d3.select('#colum2Line6').text("DATE OF DISCHARGE: 09/18/2020")
+    d3.select('#colum2Line7').text("PRIMARY CARE PHYSICIAN: Araña Grande")
+    d3.select('#colum2Line9').text("DISCHARGE MEDICATIONS")
+    d3.select('#colum2Line10').attr('fill', 'black').on('click', ()=> {}).text("1. Aspirin 325 mg daily.")
+    d3.select('#colum2Line11').text("2. Plavix 75 mg daily.")
+    d3.select('#colum2Line12').text("3. Lopressor 50 mg twice daily.")
+    d3.select('#colum2Line13').text("4. Lipitor 80 mg daily.")
+    d3.select('#colum2Line14').text("5. Wellbutrin SR 150 mg as previously directed.")
+    d3.select('#colum2Line16').text("PROCEDURE:  Cardiac catheterization with angioplasty and stent placement to the LAD")
+    d3.select('#colum2Line17').text("and RCA.")
+    d3.select('#colum2Line19').text("HISTORY OF PRESENT ILLNESS:  This 78-year-old male with no previous history of heart ")
+    d3.select('#colum2Line20').text("disease presented complaining of a 4-day history of waxing and waning chest pain ")
+    d3.select('#colum2Line21').text("radiating to the left arm. He was admitted to the hospital. Peak troponin was 1.5, ")
+    d3.select('#colum2Line22').text("peak CPK 420, MB 6.2 and index 1.5%. The patient then underwent cardiac ")
+    d3.select('#colum2Line23').text("catheterization, which revealed a 90% proximal LAD lesion, a 60% lesion of the first ")
+    d3.select('#colum2Line24').text("obtuse marginal and a 90% mid RCA lesion with a normal ejection fraction. He was  ")
+    d3.select('#colum2Line25').text("then transferred here for intervention.")
+    d3.select('#colum2Line27').text("PAST MEDICAL HISTORY:  Hypertension.")
+    d3.select('#colum2Line29').text("MEDICATIONS PRIOR TO ADMISSION:  None. The patient had stopped taking his ")
+    d3.select('#colum2Line30').text("antihypertensive medications.")
+    d3.select('#colum2Line32').text("FAMILY HISTORY:  Positive for coronary artery disease. Mother had an MI at the age ")
+    d3.select('#colum2Line33').text("of 65 and father died of sudden cardiac death at the age of 70.")
+    d3.select('#colum2Line34').text("LABORATORY DATA:  On the day of discharge, white blood cell count 8700, hemoglobin ")
+    d3.select('#colum2Line35').text("14.2, hematocrit 41.8, platelet count 280,000. Sodium 141, potassium 3.9, chloride 107,")
+    d3.select('#colum2Line36').text(" CO2 of 26, BUN 10, creatinine 1.1, glucose 90. CPK 165, MB 4.2 and troponin 1.66.")
+    d3.select('#colum2Line38').text("DISCHARGE STATUS:  The patient is discharged home for outpatient followup with Dr. ")
+    d3.select('#colum2Line39').text("Mao Zedong in 1 to 2 weeks. He will also follow up with his primary care physician, ")
+    d3.select('#colum2Line40').text("Dr. Araña Grande, within 4 to 6 weeks. The patient has been advised the importance ")
+    d3.select('#colum2Line41').text("of smoking cessation. He does plan to quit. He has been given a copy of the ")
+    d3.select('#colum2Line42').text("discharge plan with instructions, medications and prescriptions and will talk to Dr. ")
+    d3.select('#colum2Line43').text("Araña Grande at the time of his followup visit regarding indication for cardiac ")
+    d3.select('#colum2Line44').text("rehab and if he has any further questions or concerns.")
 
 }
 
