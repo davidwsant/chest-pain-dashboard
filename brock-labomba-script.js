@@ -662,7 +662,7 @@ function dischargeColumn2 () {
     d3.select('#colum2Line14').text("5. Wellbutrin SR 150 mg as previously directed.")
     d3.select('#colum2Line16').text("PROCEDURE:  Cardiac catheterization with angioplasty and stent placement to the LAD")
     d3.select('#colum2Line17').text("and RCA.")
-    d3.select('#colum2Line19').text("HISTORY OF PRESENT ILLNESS:  This 78-year-old male with no previous history of heart ")
+    d3.select('#colum2Line19').text("HISTORY OF PRESENT ILLNESS:  This 59-year-old male with no previous history of heart ")
     d3.select('#colum2Line20').text("disease presented complaining of a 4-day history of waxing and waning chest pain ")
     d3.select('#colum2Line21').text("radiating to the left arm. He was admitted to the hospital. Peak troponin was 1.5, ")
     d3.select('#colum2Line22').text("peak CPK 420, MB 6.2 and index 1.5%. The patient then underwent cardiac ")
